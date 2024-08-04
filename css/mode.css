@@ -1,0 +1,126 @@
+/*dark-mode*/
+
+:root:has(.mode:checked) body {
+    background-color: #202020;
+
+}
+
+:root:has(.mode:checked) .mode-status .moon {
+    display: none;
+}
+
+:root:has(.mode:checked) .mode-status .sun,
+:root:has(.mode-checked)  .checkbtn {
+    display: block;
+}
+
+body:has(.mode:checked) .navbar {
+    background-color: RGB(23, 23, 23);
+}
+
+body:has(.mode:checked) .header,
+body:has(.mode:checked) .section2 {
+    background-color:
+        #252525;
+}
+body:has(.mode:checked):not(body:has(:target)) .links a[href="#home"],
+body:has(.mode:checked):has(.header:target) .links a[href="#home"],
+body:has(.mode:checked):has(.section1:target) .links a[href="#chefs"],
+body:has(.mode:checked):has(.section2:target) .links a[href="#gallery"],
+body:has(.mode:checked):has(.section3:target) .links a[href="#contact"] {
+  border-bottom: 2px solid #C17E1F;
+  padding-bottom: 8px;
+  color: #fff;
+}
+body:has(.mode:checked) .logo h1 span,
+body:has(.mode:checked) .mealify h2 span,
+body:has(.mode:checked) .section1 p span,
+body:has(.mode:checked) .section2 p span,
+body:has(.mode:checked) .section3 p span,
+body:has(.mode:checked) .touch ul li i {
+    color: #C17E1F
+}
+
+
+
+body:has(.mode:checked) .header-btn,
+body:has(.mode:checked) .contact-icon,
+body:has(.mode:checked) form .btn,
+body:has(.mode:checked) .subscribe button {
+    background-color: #C17E1F;
+
+}
+
+body:has(.mode:checked) .video-icon {
+
+    background-image: linear-gradient(to right, #C17E1F 0 50%, transparent 50% 100%);
+}
+
+body:has(.mode:checked) .contact {
+    background-color: #0D0D0D;
+
+}
+
+body:has(.mode:checked) .chef {
+    background-color: #161616;
+    margin-right: 40px;
+    border-radius: 2%;
+}
+
+body:has(.mode:checked) .section1 .inner {
+    padding: 0;
+}
+
+body:has(.mode:checked) .Call-us a,
+body:has(.mode:checked) .contact-txt p,
+body:has(.mode:checked) .chef .shef-txt h3 {
+    color: #ffffff;
+
+}
+
+body:has(.mode:checked) .chef .shef-txt p,
+body:has(.mode:checked) .chef .shef-txt span {
+    color: RGB(159, 159, 159)
+}
+
+body:has(.mode:checked) .contact-icon i,
+body:has(.mode:checked) .video-icon {
+    color: #0D0D0D;
+    font-size: 20px;
+
+}
+body:has(.mode:checked) .underline:hover{
+    padding-bottom: 9px;
+    border-bottom: 2px solid  #C17E1F;
+}
+body:has(.mode:checked) .links{
+    transition: color 3s;
+} 
+body:has(.mode:checked) .underline {
+    position: relative;
+  }
+body:has(.mode:checked) .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    background-color: #C17E1F;
+    transform-origin: bottom right;
+    transition: transform .4s ease-out;
+  }
+body:has(.mode:checked) .links a:hover {
+    color: #fff;
+    border-bottom:none;
+}
+
+body:has(.mode:checked) .txt h2,
+body:has(.mode:checked) .mode-status .sun,
+body:has(.mode:checked) .loading .video-btn,
+body:has(.mode:checked) .logo,
+body:has(.mode:checked) .checkbtn
+ {
+    color: #FFFFFF
+}

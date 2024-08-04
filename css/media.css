@@ -1,0 +1,583 @@
+/* xs */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo {
+        margin-right: 60px;
+    }
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .links ul {
+        position: absolute;
+        width: 350px;
+        height: 100vh;
+        background-color: #ffff;
+        flex-direction: column;
+        z-index: 99;
+        border-left: 2px solid #f1f1f1;
+        right: -450px;
+        top: 100px;
+        transition: all .5s;
+    }
+
+    .checkbtn {
+        display: block;
+        padding: 10px 15px 5px;
+    }
+
+
+    .links ul li {
+        margin-top: 30px;
+        line-height: 10px;
+        text-align: left;
+    }
+
+
+    .links ul .active {
+        border-bottom: unset;
+        color: #8F8F8F;
+    }
+
+    .links ul li a {
+        font-size: 16px;
+
+    }
+
+    .links ul .active:hover {
+        color: #000;
+
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+
+
+    body:has(#check:checked) .links ul {
+        right: -12%;
+    }
+
+    body:has(.mode:checked):not(body:has(:target)) .links a[href="#home"],
+    body:has(.mode:checked):has(.header:target) .links a[href="#home"],
+    body:has(.mode:checked):has(.section1:target) .links a[href="#chefs"],
+    body:has(.mode:checked):has(.section2:target) .links a[href="#gallery"],
+    body:has(.mode:checked):has(.section3:target) .links a[href="#contact"] {
+        color: #8F8F8F;
+    }
+
+    .img {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .header .container {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+
+    }
+
+    .txt {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+
+    }
+
+    .loading {
+        padding-left: 50px;
+    }
+
+    .header-btn {
+        border-radius: 35px;
+    }
+
+    .chef {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section1 .Chefs {
+        display: unset;
+        flex-wrap: nowrap;
+    }
+
+    .gallery {
+        display: unset;
+    }
+
+    .gallery section {
+        width: 100%;
+    }
+
+    .section1 .container {
+        width: 100%;
+        padding: auto;
+    }
+
+    .section2 .container,
+    .section3 .container,
+    .footer .container {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 25px 10px
+    }
+
+    form .gruop input {
+        width: 100%;
+        ;
+    }
+
+    .footer .one,
+    .touch {
+        width: 100%;
+
+    }
+
+    .footer .subscribe {
+        width: 100%;
+        padding: 30px 0;
+
+    }
+
+    .final {
+        display: block;
+    }
+
+    .input-group {
+        display: block;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe button {
+        width: 100%;
+        display: block;
+    }
+
+
+
+
+}
+
+/* sm */
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .logo {
+        margin-right: 60px;
+    }
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .links ul {
+        position: absolute;
+        width: 350px;
+        height: 100vh;
+        background-color: #ffff;
+        flex-direction: column;
+        z-index: 99;
+        border-left: 2px solid #f1f1f1;
+        right: -450px;
+        top: 100px;
+        transition: all .5s;
+    }
+
+    .checkbtn {
+        display: block;
+        padding: 10px 15px 5px;
+    }
+
+
+    .links ul li {
+        margin-top: 30px;
+        line-height: 10px;
+        text-align: left;
+    }
+
+
+    .links ul .active {
+        border-bottom: unset;
+        color: #8F8F8F;
+    }
+
+    .links ul li a {
+        font-size: 16px;
+
+    }
+
+    .links ul .active:hover {
+        color: #000;
+
+    }
+
+    .checkbtn,
+    .close {
+        display: block;
+    }
+
+    .closebtn {
+        display: flex;
+        align-self: flex-end;
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    body:has(#check:checked) .links ul {
+        right: -12%;
+    }
+
+    body:has(.mode:checked):not(body:has(:target)) .links a[href="#home"],
+    body:has(.mode:checked):has(.header:target) .links a[href="#home"],
+    body:has(.mode:checked):has(.section1:target) .links a[href="#chefs"],
+    body:has(.mode:checked):has(.section2:target) .links a[href="#gallery"],
+    body:has(.mode:checked):has(.section3:target) .links a[href="#contact"] {
+        color: #8F8F8F;
+    }
+
+    .img {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .header .container {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+
+    }
+
+    .txt {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+
+    }
+
+    .loading {
+        padding-left: 50px;
+    }
+
+    .header-btn {
+        border-radius: 35px;
+    }
+
+    .chef {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section1 .Chefs {
+        display: unset;
+        flex-wrap: nowrap;
+    }
+
+    .gallery {
+        display: unset;
+    }
+
+    .gallery section {
+        width: 100%;
+    }
+
+
+    .contact {
+        width: 100%;
+        padding: 25px 10px
+    }
+
+    form .gruop input {
+        width: 100%;
+        ;
+    }
+
+    .footer .one,
+    .touch {
+        width: 100%;
+
+    }
+
+    .footer .subscribe {
+        width: 100%;
+        padding: 30px 0;
+
+    }
+
+    .final {
+        display: block;
+    }
+
+
+
+}
+
+/* md */
+
+@media screen and (min-width: 769px) and (max-width: 872px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .logo {
+        margin-right: 60px;
+    }
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .links ul {
+        position: absolute;
+        width: 350px;
+        height: 100vh;
+        background-color: #ffff;
+        flex-direction: column;
+        z-index: 99;
+        border-left: 2px solid #f1f1f1;
+        right: -450px;
+        top: 100px;
+        transition: all .5s;
+    }
+
+    .checkbtn {
+        display: block;
+        padding: 10px 15px 5px;
+    }
+
+
+    .links ul li {
+        margin-top: 30px;
+        line-height: 10px;
+        text-align: left;
+    }
+
+
+    .links ul .active {
+        border-bottom: unset;
+        color: #8F8F8F;
+    }
+
+    .links ul li a {
+        font-size: 16px;
+
+    }
+
+    .links ul .active:hover {
+        color: #000;
+
+    }
+
+    .checkbtn,
+    .close {
+        display: block;
+    }
+
+    .closebtn {
+        display: flex;
+        align-self: flex-end;
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    body:has(#check:checked) .links ul {
+        right: -12%;
+    }
+
+    body:has(.mode:checked):not(body:has(:target)) .links a[href="#home"],
+    body:has(.mode:checked):has(.header:target) .links a[href="#home"],
+    body:has(.mode:checked):has(.section1:target) .links a[href="#chefs"],
+    body:has(.mode:checked):has(.section2:target) .links a[href="#gallery"],
+    body:has(.mode:checked):has(.section3:target) .links a[href="#contact"] {
+        color: #8F8F8F;
+    }
+
+    .img {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .header .container {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+
+    }
+
+    .txt {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+
+    }
+
+    .loading {
+        padding-left: 50px;
+    }
+
+    .header-btn {
+        border-radius: 35px;
+    }
+
+    .section1 .Chefs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chef {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    body:has(.mode:checked) .section1 .Chefs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body:has(.mode:checked) .chef {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        height: 1405px;
+    }
+
+    .gallery section {
+        width: 50%;
+    }
+
+    .gallery .meal1 {
+        order: 1;
+    }
+
+    .gallery .meal6 {
+        order: 6;
+    }
+
+    .gallery .meal4 {
+        order: 4;
+    }
+
+    .gallery .meal7 {
+        order: 7;
+    }
+
+    .gallery .meal5 {
+        order: 2;
+    }
+
+    .gallery .meal2 {
+        order: 3;
+    }
+
+    .gallery .meal3 {
+        order: 5;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 25px 10px
+    }
+
+    form .gruop input {
+        width: 100%;
+        ;
+    }
+    .footer .one,
+    .touch {
+        width: 100%;
+
+    }
+
+    .footer .subscribe {
+        width: 100%;
+        padding: 30px 0;
+
+    }
+
+    .final {
+        display: block;
+    }
+  
+
+}
+
+
+/* lg */
+@media screen and (min-width:873px) and (max-width: 1200px) {
+    
+    .gallery {
+        height: 900px;
+        margin: auto;
+    }
+
+    .gallery section {
+        width:35%;
+    }
+    form .gruop input {
+        width: 49.5%;
+      }
+    
+}
+
+
+
+/* xl */
+
+@media screen and (min-width: 1201px)and (max-width: 1320px) {
+    .gallery {
+        height:1000px;
+        margin: auto;
+    }
+
+    .gallery section {
+        width:35%;
+    }
+    form .gruop input {
+        width: 49.5%;
+      }
+  
+}
+@media screen and (min-width: 1321px)and (max-width: 1350px) {
+    .gallery {
+        height:1165px;
+        margin: auto;
+    }
+
+    .gallery section {
+        width:36%;
+    }
+    form .gruop input {
+        width: 49.5%;
+      }
+  
+}
